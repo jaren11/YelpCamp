@@ -29,7 +29,7 @@
 
 <script>
     const mapToken = '<%-process.env.MAPBOX_TOKEN%>'
-    let campgrounds = '<%-JSON.stringify(campgrounds)%>'
+    let campgrounds = <%-JSON.stringify(campgrounds)%>
     campgrounds = { features: JSON.parse(campgrounds) }
 </script>
 <script src="/js/clusterMap.js"></script>
